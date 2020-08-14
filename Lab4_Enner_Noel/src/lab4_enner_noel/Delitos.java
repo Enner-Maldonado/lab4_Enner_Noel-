@@ -9,7 +9,7 @@ package lab4_enner_noel;
  *
  * @author ENNER
  */
-public class Delito_Menor {
+public class Delitos {
     //Atributos
     private String descripcion;
     private String nombre;
@@ -18,16 +18,13 @@ public class Delito_Menor {
     private String fecha;
     private String pais;
     private int num_delitos;
-    private String name_oficial;
-    private String ID;
-    private int num_celda;
     
     //Constructores
 
-    public Delito_Menor() {
+    public Delitos() {
     }
 
-    public Delito_Menor(String descripcion, String nombre, String culpable, String sentencia, String fecha, String pais, int num_delitos, String name_oficial, String ID, int num_celda) {
+    public Delitos(String descripcion, String nombre, String culpable, String sentencia, String fecha, String pais, int num_delitos) {
         this.descripcion = descripcion;
         this.nombre = nombre;
         this.culpable = culpable;
@@ -35,10 +32,9 @@ public class Delito_Menor {
         this.fecha = fecha;
         this.pais = pais;
         this.num_delitos = num_delitos;
-        this.name_oficial = name_oficial;
-        this.ID = ID;
-        this.num_celda = num_celda;
     }
+    
+    //Mutadores
 
     public String getDescripcion() {
         return descripcion;
@@ -95,35 +91,11 @@ public class Delito_Menor {
     public void setNum_delitos(int num_delitos) {
         this.num_delitos = num_delitos;
     }
-
-    public String getName_oficial() {
-        return name_oficial;
-    }
-
-    public void setName_oficial(String name_oficial) {
-        this.name_oficial = name_oficial;
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
-
-    public int getNum_celda() {
-        return num_celda;
-    }
-
-    public void setNum_celda(int num_celda) {
-        this.num_celda = num_celda;
-    }
+    
 
     @Override
     public String toString() {
-        return "Delito_Menor{" + "descripcion=" + descripcion + ", nombre=" + nombre + ", culpable=" + culpable + ", sentencia=" + sentencia + ", fecha=" + fecha + ", pais=" + pais + ", num_delitos=" + num_delitos + ", name_oficial=" + name_oficial + ", ID=" + ID + ", num_celda=" + num_celda + '}';
+        return "Delitos{" + "descripcion=" + descripcion + ", nombre=" + nombre + ", culpable=" + culpable + ", sentencia=" + sentencia + ", fecha=" + fecha + ", pais=" + pais + ", num_delitos=" + num_delitos + '}';
     }
-    
     
 }
