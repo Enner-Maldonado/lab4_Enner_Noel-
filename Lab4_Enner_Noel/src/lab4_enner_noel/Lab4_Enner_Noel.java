@@ -365,10 +365,37 @@ public class Lab4_Enner_Noel {
                     int opcionE = sc.nextInt();
                     switch (opcionE) {
                         case 1:
+                            for (Object o : Criminales) {
+                                System.out.println(Criminales.indexOf(o)+"-"+o);
+                            }
+                            System.out.println("Ingrese la posición a eliminar: ");
+                            int pos = sc.nextInt();
+                            while (pos < 0 || pos > Criminales.size()) {
+                                System.out.println("Valor introducido no es valido!");
+                            }
+                            Criminales.remove(pos);
                             break;
                         case 2:
+                            for (Object o : Agentes) {
+                                System.out.println(Agentes.indexOf(o)+"-"+o);
+                            }
+                            System.out.println("Ingrese la posición a eliminar: ");
+                            pos = sc.nextInt();
+                            while (pos < 0 || pos > Agentes.size()) {
+                                System.out.println("Valor introducido no es valido!");
+                            }
+                            Agentes.remove(pos);
                             break;
                         case 3:
+                            for (Object o : Delitos) {
+                                System.out.println(Delitos.indexOf(o)+"-"+o);
+                            }
+                            System.out.println("Ingrese la posición a eliminar: ");
+                            pos = sc.nextInt();
+                            while (pos < 0 || pos > Delitos.size()) {
+                                System.out.println("Valor introducido no es valido!");
+                            }
+                            Delitos.remove(pos);
                             break;
                         default:
                             System.out.println("Numero ingresado no es valido!");
@@ -383,10 +410,19 @@ public class Lab4_Enner_Noel {
                     int opcionL = sc.nextInt();
                     switch (opcionL) {
                         case 1:
+                            for (Object o : Criminales) {
+                                System.out.println(Criminales.indexOf(o)+"-"+o);
+                            }
                             break;
                         case 2:
+                            for (Object o : Agentes) {
+                                System.out.println(Agentes.indexOf(o)+"-"+o);
+                            }
                             break;
                         case 3:
+                            for (Object o : Delitos) {
+                                System.out.println(Delitos.indexOf(o)+"-"+o);
+                            }
                             break;
                         default:
                             System.out.println("Numero ingresado no es valido!");
